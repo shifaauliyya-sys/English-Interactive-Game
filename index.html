@@ -1,51 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Forgotten Islands: Beyond the Map - Verdantia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>The Forgotten Islands</title>
     <style>
-        :root {
-            --forest-green: #315C49;
-            --moss-green: #8CBF83;
-            --parchment: #F3DFA9;
-            --terracotta: #D88F68;
-            --river-blue: #7EAEC2;
-            --dark-wood: #2D1E12;
-            --panel-bg: rgba(243, 223, 169, 0.95);
-        }
-
-        * {
-            box-sizing: border-box;
+        /* Mengatur agar halaman memenuhi seluruh layar dan elemen di dalamnya berada di tengah */
+        body {
             margin: 0;
             padding: 0;
-            font-family: 'Fredoka', sans-serif;
-        }
-
-        body {
-            background-color: var(--dark-wood);
-            color: #2D1E12;
+            width: 100vw;
             height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
+            justify-content: center; /* Posisi tengah secara horizontal */
+            align-items: center;     /* Posisi tengah secara vertikal */
+            background-color: #2b533f; /* Warna latar belakang hijau */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        #game-container {
-            width: 1280px;
-            height: 720px;
-            background: var(--forest-green);
-            position: relative;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-            border: 8px solid #1a1009;
-            border-radius: 12px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
+        /* Kotak kartu utama */
+        .card {
+            background-color: #fef0d9; /* Warna krem/kuning muda */
+            border: 3px solid #d4a373; /* Garis tepi kotak */
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 450px;
+            width: 90%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
+        /* Judul */
+        .card h1 {
+            color: #2d5a27;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* Teks deskripsi */
+        .card p {
+            color: #333333;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Tombol */
+        .btn-start {
+            display: block;
+            width: 100%;
+            background-color: #d89262; /* Warna tombol oranye/cokelat muda */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        .btn-start:hover {
+            background-color: #c47f50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>The Forgotten Islands</h1>
+        <p>Chapter 1: Verdantia — The Whispering Forest. Explore, investigate, and solve language puzzles in A2 English.</p>
+        <a href="#" class="btn-start">Start Adventure</a>
+    </div>
+
+</body>
+</html>
         /* SCREEN STYLES */
         .screen {
             position: absolute;
